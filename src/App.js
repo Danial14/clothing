@@ -1,4 +1,4 @@
-import HoMe from './coMponents/hoMe.coMponent/hoMe.coMponent';
+import HoMe from './pages/hoMe.coMponent/hoMe.coMponent'
 import './App.css';
 
 function App() {
