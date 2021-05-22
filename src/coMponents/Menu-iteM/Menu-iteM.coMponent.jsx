@@ -5,9 +5,9 @@ import { withRouter } from 'react-router-dom';
 const MenuIteM = ({title ,iMage, size, linkUrl, history, match, location}) => {
     console.log(history);
     console.log(size);
-    return(<div className={`menu-item ${size}`} onClick={e=>{
-        history.push(`${match.url}${linkUrl}`);
-    }}>
+    linkUrl = "/shop";
+    return(
+    <div className={`menu-item ${size}`}>
            <div style={{backgroundImage: `url(${iMage})`}} className="background-image"/>
             <div className="content">
                 <div className="title">
@@ -17,7 +17,7 @@ const MenuIteM = ({title ,iMage, size, linkUrl, history, match, location}) => {
                     SHOP NOW
                 </span>
             </div>
-        </div>
+        </div>    
     )
 }
 export default withRouter(MenuIteM);
